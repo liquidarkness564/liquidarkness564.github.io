@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Magic Shop Generator</title>
+        <link href = "style.css" type = "text/css" rel = "stylesheet">
+    </head>
+    <body>
+        <div class = "main-heading-container">
+            <h1 class = "main-heading">Random Magic Shop Generator</h1>
+        </div>
+        <div class = "main-body">
+            <div class = "description-container-1">
+                <p class = "description">Below on the left, click the size of the village based on the population size. 
+                    This will affect shop sizes of rarity chances.
+                </p>
+                <p class = "description">
+                    On the right, select whether your world is a low, normal, or high magic world. This will affect prices, 
+                    amount of items, and how often they show up. For example, a low magic world will have less items, 
+                    higher prices, and a lower chance to get rare items.
+                </p>
+            </div>
+            <div class = "flex-container">
+                <div class = "form-container">
+                    <form>
+                        <input type ="radio" name = "city-size" value = "village" id = "village" checked>
+                        <label for ="village">Village (Population: 401 - 900)</label> <br> <br>
+                        <input type ="radio" name = "city-size" value = "small-town" id = "small-town">
+                        <label for = "small-village">Small Town (Population: 901 - 2000)</label> <br> <br>
+                        <input type ="radio" name = "city-size" value = "large-town" id = "large-town">
+                        <label for = "large-town">Large Town (Population: 2001 - 5000)</label> <br> <br>
+                        <input type = "radio" name = "city-size" value = "small-city" id = "small-city">
+                        <label for = "small-city">Small City (Population: 5001 - 12000)</label> <br> <br>
+                        <input type = "radio" name = "city-size" value = "large-city" id = "large-city">
+                        <label for ="large-city">Large City (Population: 12001 - 25000)</label> <br> <br>
+                        <input type = "radio" name = "city-size" value = "metropolis" id = "metropolis">
+                        <label for = "metropolis">Metropolis (Population: 25001+)</label>
+                    </form>
+                </div>
+                <div class = "form-container">
+                    <form>
+                        <input type = "radio" name = "magic-level" value = "low-magic" id = "low-magic">
+                        <label for = "low-magic">Low Magic World</label> <br> <br>
+                        <input type = "radio" name = "magic-level" value = "normal-magic" id = "normal-magic" checked>
+                        <label for = "mormal-magic">Normal Magic World</label> <br> <br>
+                        <input type = "radio" name = "magic-level" value = "high-magic" id = "high-magic">
+                        <label for = "high-magic">High Magic World</label> <br> <br>
+                    </form>
+                </div>
+            </div>
+            <button type = "button" id = "button">Generate Shop</button>
+            <br>
+            <br>
+            <div id = "generated-table"></div>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>
