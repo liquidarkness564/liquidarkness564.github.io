@@ -630,5 +630,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
   startSetup();
 
-  renderAllSvgLines();
+  // renderAllSvgLines();
 });
