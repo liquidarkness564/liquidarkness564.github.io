@@ -16,13 +16,38 @@ body {
   font-size: 32px;
 }
 
+.manager-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-manager-container {
+  width: 1224px;
+}
+
 .employee-container, .milestone-container {
   margin: 0 2rem;
 }
 
 #employee-card-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.card-line-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 1207px;
+  justify-content: flex-start;
+}
+
+.recruiting-girl-line-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 1165px;
+  justify-content: space-between;
 }
 
 .employee-single-card-container {
@@ -56,6 +81,32 @@ body {
   font-weight: 800;
   height: 213px;
   width: 190px;
+}
+
+#trainer-card {
+  margin-right: 250px;
+}
+
+#pizza-cook-card {
+  margin-left: 250px;
+}
+
+.svg-line-ex {
+  position: absolute;
+  /* top: 0;
+  left: 0; */
+  width: 100%;
+  height: 100%;
+  z-index: 6;
+}
+
+.svg-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 6;
 }
 
 #milestone-card-container {
@@ -94,4 +145,126 @@ body {
   font-weight: 800;
   height: 213px;
   width: 190px;
+}
+
+.setup-manager {
+  position: fixed;
+  margin: 2rem 0 2rem 10rem;
+  width: 25rem;
+  height: 45rem;
+  box-shadow: 5px 10px 25px rgb(48, 48, 48);
+}
+
+.setup-manager-title {
+  color: rgba(35, 32, 31, 0.95);
+  font-size: 32px;
+  text-align: center;
+  border-bottom: 2px solid rgba(35, 32, 31, 0.95);
+  padding: 0.5rem 0;
+  margin-bottom: 1rem;
+}
+
+.player-count-container {
+  display: flex;
+  justify-content: center;
+}
+
+.player-count-label {
+  color: rgba(35, 32, 31, 0.95);
+  font-size: 20px;
+  margin-right: 1rem;
+}
+
+.start-setup-button-container {
+  display: flex;
+  justify-content: center;
+}
+
+#start-setup-button {
+  margin-top: 0.8rem;
+  font-size: 20px;
+  background-color: rgb(254,241,217);
+  padding: 0.3rem 3rem;
+  cursor: pointer;
+}
+
+#start-setup-button:hover {
+  background-color: rgb(244, 216, 162);
+}
+
+.select-players-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.select-players-text {
+  text-align: center;
+  font-size: 20px;
+  color: rgba(35, 32, 31, 0.95);
+  margin-top: 1rem;
+}
+
+.player-markers-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.player-marker-image {
+  width: 76px;
+  height: 76px;
+  cursor: pointer;
+}
+
+.done-button {
+  margin-top: 0.8rem;
+  font-size: 20px;
+  background-color: rgb(254,241,217);
+  padding: 0.3rem 3rem;
+  cursor: pointer;
+}
+
+.done-button:hover {
+  background-color: rgb(244, 216, 162);
+}
+
+.info-setup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-setup-text {
+  width: 100%;
+  font-size: 28px;
+  text-align: center;
+  color: rgba(35, 32, 31, 0.95);
+  margin: 0.4rem 0 0.3rem 0;
+}
+
+.info {
+  color: rgba(35, 32, 31, 0.95);
+  margin: 0.3rem 0 0.3rem 0;
+  font-size: 20px;
+}
+
+.current-chains-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.current-chains-text {
+  width: 100%;
+  font-size: 28px;
+  text-align: center;
+  color: rgba(35, 32, 31, 0.95);
+  margin-bottom: 0;
+  border-bottom: 1px solid rgba(35, 32, 31, 0.95);
+}
+
+.finish-marker-image {
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
 }
