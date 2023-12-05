@@ -1,39 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" rel="stylesheet" href="style.css">
-    <title>Food Chain Magnate Manager</title>
-  </head>
-  <body>
-    <h1 class="page-title">Food Chain Magnate Manager</h1>
-    <div class="manager-container">
-      <div class="card-manager-container">
-        <div class="employee-container">
-          <h2 class="employee-title">Employee Cards</h2>
-          <div id="employee-card-container"></div>
+<html>
+    <head>
+        <title>Magic Shop Generator</title>
+        <link href = "styles.css" type = "text/css" rel = "stylesheet">
+    </head>
+    <body>
+        <div class = "main-heading-container">
+            <h1 class = "main-heading">Random Magic Shop Generator</h1>
         </div>
-        <div class="milestone-container">
-          <h2 class="milestone-title">Milestone Cards</h2>
-          <div id="milestone-card-container"></div>
-        </div>
-      </div>
-      <div class="setup-manager-container">
-        <div class="setup-manager" id="setup-manager-id">
-          <h2 class="setup-manager-title">Setup Manager</h2>
-          <div id="player-start-setup-id">
-            <div class="player-count-container">
-              <label for="player-count-input" class="player-count-label">Number of Players</label>
-              <input type="number" id="player-count-input">
+        <div class = "main-body">
+            <div class = "description-container-1">
+                <p class = "description">Below on the left, click the size of the village based on the population size. 
+                    This will affect shop sizes of rarity chances.
+                </p>
+                <p class = "description">
+                    On the right, select whether your world is a low, normal, or high magic world. This will affect prices, 
+                    amount of items, and how often they show up. For example, a low magic world will have less items, 
+                    higher prices, and a lower chance to get rare items.
+                </p>
             </div>
-            <div class="start-setup-button-container">
-              <button id="start-setup-button">Start</button>
+            <div class = "flex-container">
+                <div class = "form-container">
+                    <form>
+                        <input type ="radio" name = "city-size" value = "village" id = "village" checked>
+                        <label for ="village">Village (Population: 401 - 900)</label> <br> <br>
+                        <input type ="radio" name = "city-size" value = "small-town" id = "small-town">
+                        <label for = "small-village">Small Town (Population: 901 - 2000)</label> <br> <br>
+                        <input type ="radio" name = "city-size" value = "large-town" id = "large-town">
+                        <label for = "large-town">Large Town (Population: 2001 - 5000)</label> <br> <br>
+                        <input type = "radio" name = "city-size" value = "small-city" id = "small-city">
+                        <label for = "small-city">Small City (Population: 5001 - 12000)</label> <br> <br>
+                        <input type = "radio" name = "city-size" value = "large-city" id = "large-city">
+                        <label for ="large-city">Large City (Population: 12001 - 25000)</label> <br> <br>
+                        <input type = "radio" name = "city-size" value = "metropolis" id = "metropolis">
+                        <label for = "metropolis">Metropolis (Population: 25001+)</label>
+                    </form>
+                </div>
+                <div class = "form-container">
+                    <form>
+                        <input type = "radio" name = "magic-level" value = "low-magic" id = "low-magic">
+                        <label for = "low-magic">Low Magic World</label> <br> <br>
+                        <input type = "radio" name = "magic-level" value = "normal-magic" id = "normal-magic" checked>
+                        <label for = "mormal-magic">Normal Magic World</label> <br> <br>
+                        <input type = "radio" name = "magic-level" value = "high-magic" id = "high-magic">
+                        <label for = "high-magic">High Magic World</label> <br> <br>
+                    </form>
+                </div>
             </div>
-          </div>
+            <button type = "button" id = "button">Generate Shop</button>
+            <br>
+            <br>
+            <div id = "generated-table"></div>
         </div>
-      </div>
-    </div>
-  </body>
-  <script src="script1.js"></script>
+    </body>
+    <script src="script.js"></script>
 </html>
